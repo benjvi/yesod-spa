@@ -1,0 +1,8 @@
+flags:
+  benjvi-yesod-tutorial:
+    library-only: false
+    dev: false
+packages:
+- '.'
+extra-deps: []
+resolver: lts-3.4

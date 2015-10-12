@@ -1,0 +1,23 @@
+<h1>House Price Trends
+
+<ol>
+  <li> The data on this page is based on real historical data of house sales dating back to 1995
+
+  <li> It uses historical sales data to deduce an overall trend for a population of assets, naturally expressed as their rate of growth
+
+  <li> You can select the house population by entering a postcode prefix. Note that for smaller areas, the accuracy will be compromised due to the lower amount of data.
+
+  <hr />
+  <li #form>
+    This is an example trivial Form. Read the #
+    \<a href="http://www.yesodweb.com/book/forms">Forms chapter<span class="glyphicon glyphicon-bookmark"></span></a> #
+    on the yesod book to learn more about them.
+    $maybe (info,con) <- submission
+      <div .message .alert .alert-success>
+        Your file's type was <em>#{fileContentType info}</em>. You say it has: <em>#{con}</em>
+    <form method=post action=@{HomeR}#form enctype=#{formEnctype}>
+      ^{formWidget}
+      <button .btn .btn-primary type="submit">
+         Send it! <span class="glyphicon glyphicon-upload"></span>
+  <hr />
+
